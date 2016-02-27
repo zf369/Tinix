@@ -75,7 +75,7 @@ ALIGN    32
 LABEL_STACK:
 	; TODO: 现在堆栈是512B，测试一下将堆栈设置的特别小，call函数的时候是否会报错???
     ; 测试结果：栈不足，第一次call以后ret失败，程序无法继续
-	times    4     db  0
+	times    512     db  0
 
 TopOfStack    equ    ($ - LABEL_STACK - 1)
 
