@@ -74,7 +74,8 @@ ALIGN    32
 
 LABEL_STACK:
 	; TODO: 现在堆栈是512B，测试一下将堆栈设置的特别小，call函数的时候是否会报错???
-	times    512     db  0
+    ; 测试结果：栈不足，第一次call以后ret失败，程序无法继续
+	times    4     db  0
 
 TopOfStack    equ    ($ - LABEL_STACK - 1)
 
@@ -349,7 +350,7 @@ DispAL:
 
         loop   .begin     ; 跳转到begin继续执行，这时就是跳转上去处理原来al中的低四位
 
-        add    edi, 2     ; 显示完了2个字符，多移动了一次，是为了一个空格么？？
+        add    edi, 2     ; 显示完了2个字符，多移动了一次，是为了一个空格
 
         pop    edx
         pop    ecx
@@ -442,7 +443,9 @@ ALIGN    32
 LABEL_SEG_CODE16:
     ; 先将保护模式中使用的寄存器都使用SelectorNormal设置一下
     ; 好像是让高速寄存器含有合适的段界限和属性
+    
     ; TODO: 测试一下不给寄存器设置SelectorNormal是否能返回实模式???
+    ; 测试结果，不设置寄存器不能跳回到实模式
     mov    ax, SelectorNormal
     mov    ds, ax
     mov    es, ax
