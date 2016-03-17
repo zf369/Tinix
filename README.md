@@ -19,4 +19,4 @@ chapter3 --- pmtest1: 进入保护模式
           |
           |- pmtest8: 分页机制终章，切换分页
           |
-          |- pmtest9: 分页机制终章，切换分页
+          |- pmtest9: 设置IDT和8529A，使用时钟中断
