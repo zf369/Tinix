@@ -20,3 +20,10 @@ chapter3 --- pmtest1: 进入保护模式
           |- pmtest8: 分页机制终章，切换分页
           |
           |- pmtest9: 设置IDT和8529A，使用时钟中断
+
+chapter4 --- 0-Fat12格式学习: 该目录下放置了几个软盘文件，用于学习FAT12格式。
+          |
+          |- 1-DOS可以识别的引导盘: 该目录下有一个boot.asm，简单的引导文件，不带loader
+          |
+          |- 2-带Loader的引导盘: 该目录下有一个boot.asm和loader.asm，可以通过test_com.sh脚本进行dos调试，通过gen_image.sh脚本使用虚拟机运行。(注意_BOOT_DEBUG_的开关)
+
