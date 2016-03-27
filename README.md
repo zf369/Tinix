@@ -28,3 +28,5 @@ chapter4 --- 0-Fat12格式学习: 该目录下放置了几个软盘文件，用�
           |- 2-带Loader的引导盘: 该目录下有一个boot.asm和loader.asm，可以通过test_com.sh脚本进行dos调试，通过gen_image.sh脚本使用虚拟机运行。(注意_BOOT_DEBUG_的开关)
           |
           |- 3-调用Loader的引导盘: 之前只是查找loader.bin，这里可以跳过去执行了。 
+
+chapter5 --- 1-hello: 该目录下的hello.asm在linux下编译链接，用来初步了解elf格式。
