@@ -33,4 +33,6 @@ chapter5 --- 1-hello: 该目录下的hello.asm在linux下编译链接，用来�
           |
           |- 2-foobar: 该目录下有一个foo.asm和bar.asm，通过run.sh脚本在ubuntu下编译运行。(修正了书上的错误)
           |
-          |- 3-LoadKernel: 该目录下有一个boot.asm、loader.asm、kernel.bin，可以通过test_com.sh脚本进行dos调试，通过gen_image.sh脚本使用虚拟机运行。(注意_BOOT_DEBUG_的开关)
+          |- 3-LoadKernel: boot->loader->kernel, loader一直在实模式下
+          |
+          |- 4-ProtectAndPage:boot->loader->kernel, loader进入了保护模式、启用了分页
