@@ -38,3 +38,5 @@ chapter5 --- 1-hello: 该目录下的hello.asm在linux下编译链接，用来�
           |- 4-ProtectAndPage:boot->loader, loader进入了保护模式、启用了分页, 复制了kernel.bin到内存
           |
           |- 5-JmpKernel:boot->loader->kernel, loader进入了保护模式、启用了分页，跳转到kernel执行。
+          |
+          |- 6-ExpandKernel:kernel同时使用了汇编和C，重设了GDT。
