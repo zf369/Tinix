@@ -39,4 +39,6 @@ chapter5 --- 1-hello: 该目录下的hello.asm在linux下编译链接，用来�
           |
           |- 5-JmpKernel:boot->loader->kernel, loader进入了保护模式、启用了分页，跳转到kernel执行。
           |
-          |- 6-ExpandKernel:kernel同时使用了汇编和C，重设了GDT。
+          |- 6-ExpandKernel: kernel同时使用了汇编和C，重设了GDT。
+          |
+          |- 7-KernelTree: 整理了目录结构，编写了Makefile
