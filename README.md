@@ -42,3 +42,5 @@ chapter5 --- 1-hello: 该目录下的hello.asm在linux下编译链接，用来�
           |- 6-ExpandKernel: kernel同时使用了汇编和C，重设了GDT。
           |
           |- 7-KernelTree: 整理了目录结构，编写了Makefile
+          |
+          |- 8-AddIDT: 为kernel增加了中断处理
