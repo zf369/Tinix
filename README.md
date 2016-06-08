@@ -29,7 +29,9 @@ chapter4 --- 0-Fat12格式学习: 该目录下放置了几个软盘文件，用�
           |
           |- 3-调用Loader的引导盘: 之前只是查找loader.bin，这里可以跳过去执行了。 
 
-chapter5 --- 1-hello: 该目录下的hello.asm在linux下编译链接，用来初步了解elf格式。
+chapter5 --- boot、loader、kernel
+          |
+          |- 1-hello: 该目录下的hello.asm在linux下编译链接，用来初步了解elf格式。
           |
           |- 2-foobar: 该目录下有一个foo.asm和bar.asm，通过run.sh脚本在ubuntu下编译运行。(修正了书上的错误)
           |
@@ -44,3 +46,8 @@ chapter5 --- 1-hello: 该目录下的hello.asm在linux下编译链接，用来�
           |- 7-KernelTree: 整理了目录结构，编写了Makefile
           |
           |- 8-AddIDT: 为kernel增加了中断处理
+
+chapter6 --- 进程
+          |
+          |- 1-HelloProcess: 实现了从ring0到ring1的跳转，ring1中一个进程在不断打印，同时时钟中断也不断触发
+          |
