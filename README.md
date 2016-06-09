@@ -51,3 +51,5 @@ chapter6 --- 进程
           |
           |- 1-HelloProcess: 实现了从ring0到ring1的跳转，ring1中一个进程在不断打印，同时时钟中断也不断触发
           |
+          |- 2-ClockInterupt: 完善时钟中断处理函数，进行了栈切换，设置EOI，也为进程切换做了准备
+          |
