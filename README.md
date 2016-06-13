@@ -55,3 +55,5 @@ chapter6 --- 进程
           |
           |- 3-ReenterInterupt: 继续完善时钟中断，在中断处理过程中可重入中断
           |
+          |- 4-MultiProcess: 在时钟中断中增加进程调度函数，A、B、C三个进程平分CPU时间片
+          |
