@@ -57,3 +57,5 @@ chapter6 --- 进程
           |
           |- 4-MultiProcess: 在时钟中断中增加进程调度函数，A、B、C三个进程平分CPU时间片
           |
+          |- 5-AdvancedInterupt: 对中断函数进行整理，将进中断和出中断的代码收敛在一处
+          |
