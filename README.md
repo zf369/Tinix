@@ -59,5 +59,7 @@ chapter6 --- 进程
           |
           |- 5-AdvancedInterupt: 对中断函数进行整理，将进中断和出中断的代码收敛在一处
           |
-          |- 6-PerfectInteruptt: 参考Minix，优化了中断处理函数
+          |- 6-PerfectInterupt: 参考Minix，优化了中断处理函数
+          |
+          |- 7-SystemCall: 实现了一个简单的系统调用
           |
