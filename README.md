@@ -63,3 +63,7 @@ chapter6 --- 进程
           |
           |- 7-SystemCall: 实现了一个简单的系统调用
           |
+          |- 8-NewDelay: 通过8253实现了10ms级别的delay函数
+          |
+          |- 9-PriorityProcess: 实现了优先级不同的进程调度
+
