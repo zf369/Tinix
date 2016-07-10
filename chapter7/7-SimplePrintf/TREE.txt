@@ -1,0 +1,65 @@
+TINIX
+  |
+  |-- Makefile
+  |-- kernel.bin
+  |
+  |-- copyBooterSector.py
+  |-- gen_image.sh
+  |-- test_com.sh
+  |
+  |-- tinix.img
+  |
+  |-- TREE.txt
+  |
+  |--  lib
+  |     |
+  |     |-- string.asm
+  |     |-- klib.asm
+  |     |-- klib.c
+  |   
+  |-- kernel
+  |     |
+  |     |-- kernel.asm
+  |     |-- start.c
+  |     |-- global.c
+  |     |-- i8259.c
+  |     |-- protect.c
+  |     |-- main.c
+  |     |-- clock.c
+  |     |-- keyboard.c
+  |     |-- tty.c
+  |     |-- console.c
+  |     |-- printf.c
+  |     |-- vsprintf.c
+  |   
+  |
+  |-- include
+  |     |
+  |     |-- type.h
+  |     |-- protect.h
+  |     |-- const.h
+  |     |-- proto.h
+  |     |-- string.h
+  |     |-- global.h
+  |     |-- proc.h
+  |     |-- sconst.inc
+  |     |-- tty.h
+  |     |-- console.h
+  |
+  |-- boot
+        |
+        |-- loader.asm
+        |-- boot.asm
+        |-- Makerfile
+        |
+        |-- loader.bin
+        |-- boot.bin
+        |
+        |-- include
+               |
+               |-- pm.inc
+               |-- load.inc
+               |-- fat12hdr.inc
+
+
+
